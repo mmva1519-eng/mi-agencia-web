@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Agencia</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #020617;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #2563eb, #06b6d4);
+        }
+
+        .servicios {
+            background: #020617;
+        }
+
+        .card {
+    background: #1e293b;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #334155;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #2563eb;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #e0e7ff;
+    transform: scale(1.05);
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h2>Mi Agencia</h2>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+    <h1>Impulsamos tu negocio 🚀</h1>
+    <p>Diseño web, marketing digital y más</p>
+    <a href="#contacto" class="btn">Contáctanos</a>
+</section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros servicios</h2>
+
+        <div class="card">
+    <h3>Diseño Web</h3>
+    <p>Creación de páginas modernas y rápidas.</p>
+</div>
+
+<div class="card">
+    <h3>SEO</h3>
+    <p>Posicionamos tu negocio en Google.</p>
+</div>
+
+<div class="card">
+    <h3>Marketing Digital</h3>
+    <p>Atraemos clientes con estrategias efectivas.</p>
+</div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+    <h2>Contacto</h2>
+
+    <form action="https://formsubmit.co/mmva1519@gmail.com" method="POST">
+
+        <input type="text" placeholder="Tu nombre" required><br><br>
+        <input type="email" placeholder="Tu email" required><br><br>
+        <textarea placeholder="Tu mensaje" required></textarea><br><br>
+        <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+
+</section>
+
+</body>
+</html>
