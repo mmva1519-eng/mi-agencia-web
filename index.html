@@ -110,6 +110,19 @@ textarea {
     height: 100px;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
     </style>
 
 </head>
@@ -126,14 +139,14 @@ textarea {
     </header>
 
     <!-- HERO -->
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero fade-in">
     <h1>Haz crecer tu negocio en internet 🚀</h1>
 <p>Diseñamos páginas web que convierten visitantes en clientes</p>
     <a href="#contacto" class="btn">Contáctanos</a>
 </section>
 
     <!-- SERVICIOS -->
-    <section id="servicios" class="servicios">
+    <section id="servicios" class="servicios fade-in">
         <h2>Nuestros servicios</h2>
 
         <div class="card">
@@ -154,7 +167,7 @@ textarea {
     </section>
 
 <!-- CONFIANZA -->
-<section class="confianza">
+<section class="confianza fade-in">
     <h2>Clientes que confían en nosotros</h2>
 
     <div class="testimonios">
